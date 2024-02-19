@@ -18,3 +18,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo apt update
 sudo apt install git
 git --version
+
+docker-compose build
+docker-compose up -d
