@@ -1,3 +1,8 @@
+sudo apt update
+sudo apt install git
+git --version
+git clone https://github.com/mery9/Deploying-Mini-Project-with-Docker-compose.git
+cd Deploying-Mini-Project-with-Docker-compose/
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 # Add Docker's official GPG key:
 sudo apt-get update
@@ -17,9 +22,5 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 sudo apt install docker-compose
 
-sudo apt update
-sudo apt install git
-git --version
-
-docker-compose build
-docker-compose up -d
+sudo docker-compose build
+sudo docker-compose up -d
